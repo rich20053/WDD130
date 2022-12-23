@@ -1,0 +1,408 @@
+
+body {
+    background-color: #E3E4DB;
+  }
+  
+  
+  footer {
+    max-height: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, Times, serif;
+    color: #028090;
+  }
+  
+  h1 {
+    color: #E3E4DB;
+    font-size: 50px;
+    text-align: center;
+    background-color: #02C39A;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #028090; 
+  }
+  
+  h2 {
+    font-size: 30px;
+    border-top: 5px double;
+    border-bottom: 5px double;
+    padding: .5em;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  main {
+    background-color: #E3E4DB;
+  }
+  
+  nav a {
+    color: #00A896;
+    font-size: 1.1em;
+  }
+  
+  nav a:hover {
+    color: #E3E4DB;
+    background-color: #00A896;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  p {
+    font-family: Verdana, myriad, sans-serif;
+    line-height: 20px;
+  }
+  
+  .action {
+     background-color: #02C39A60;
+     margin-top: 2px;
+     padding: 0px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-column: 2;
+     grid-row: 1;
+  }
+  
+  .action a {
+    align-self: center;
+  }
+  
+  .actionbutton {
+    font-size: 30px;
+    font-weight: bold;
+    color: #E3E4DB;
+    background-color: #00A896;
+    padding: 10px;
+    align-self: center; 
+  }
+  
+  .action h3 {
+    margin-top: 2em;
+    color: #E3E4DB;
+    font-weight: bold;
+  }
+  
+  .address1 {
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+    font-size: 30px;
+  }
+  
+  .address2 {
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+    justify-self: right;
+    font-size: 30px;
+  }
+  
+  .address3 {
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+    justify-self: right;
+    color: #E3E4DB;
+    font-size: 30px;
+  }
+  
+  .banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+  
+  .banner-box img {
+    width: 100%;
+    padding-top: 2px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+  }
+    
+  .email {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1em;
+    margin: 1em 1em 0 1em;
+  }
+  
+  .emailForm {
+    grid-column: 1 / 4;
+    grid-row: 2 / 12;
+    font-size: 30px; 
+  }
+  
+  .emailImage {
+    grid-column: 4 / 7;
+    grid-row: 6 / 10;
+  }
+  
+  .emailSubmit {
+    grid-column: 2 / 3;
+    grid-row: 14 / 15;
+    font-size: 30px;
+  }
+  
+  .home-grid {
+    padding: 20px;
+    line-height: 16px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+  }
+  
+  .home-headline-1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  .home-headline-2 {
+    grid-column: 3 / 6;
+    grid-row: 4 / 5;
+  }
+  
+  .home-paragraph-1 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+  }
+  
+  .home-paragraph-2 {
+    grid-column: 4 / 6;
+    grid-row: 5 / 7;
+  }
+  
+  .home-paragraph-3 {
+    grid-column: 1 / 6;
+    grid-row: 7 / 8;
+    text-align: center;
+  }
+  
+  .home-right-img {
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+  }
+  
+  .home-left-img {
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+  }
+  
+  .home-left-img,
+  .home-right-img {
+      border: 3px solid #02C39A;
+      box-shadow: 5px 5px 5px #028090;
+  }
+  
+  .instructions {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: .5px;
+    font-size: 25px;
+    width: 100%;
+    color: #028090;
+  }
+  
+  .logo-box {
+    border-radius: 50px 50px 0 0; 
+    padding: .5em;
+    border: 5px solid #028090;
+  }
+  
+  .PageTitle {
+    Margin: 0;
+  }
+  
+  .phone {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1em;
+  }
+  
+  .phoneImage {
+    grid-column: 1 / 4;
+    grid-row: 1 / 7;
+  }
+  
+  .phoneHeader {
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+    margin: 0;
+  }
+  
+  .phoneNumber {
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+    line-height: 40px;
+    font-size: 48px; 
+    margin: 0;
+  }
+  
+  .social {
+    justify-self: end;
+    padding: 10px;
+  }
+  
+  .trip {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px;
+    grid-gap: 1em;
+  }
+  
+  .trip1 h2 {
+    margin-bottom: -16px; 
+    grid-column: 6 / 13;
+    grid-row: 1 / 2; 
+  }
+  
+  .trip1 h3 {
+    grid-column: 6 / 13;
+    grid-row: 2 / 3;
+  }
+  
+  .trip1 p {
+    grid-column: 6 / 13;
+    grid-row: 3 / 4;
+  }
+  
+  .trip1 img {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4; 
+  }
+  
+  .trip2 h2 {
+    margin-bottom: -16px; 
+    grid-column: 1 / 8;
+    grid-row: 1 / 2; 
+  }
+  
+  .trip2 h3 {
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+  }
+  
+  .trip2 p {
+    grid-column: 1 / 8;
+    grid-row: 3 / 4; 
+  }
+  
+  .trip2 img {
+    grid-column: 8 / 13;
+    grid-row: 1 / 4; 
+  }
+  
+  .trip3 h2 {
+    margin-bottom: -16px; 
+    grid-column: 6 / 13;
+    grid-row: 1 / 2; 
+  }
+  
+  .trip3 h3 {
+    grid-column: 6 / 13;
+    grid-row: 2 / 3;
+  }
+  
+  .trip3 p {
+    grid-column: 6 / 13;
+    grid-row: 3 / 4; 
+  }
+  
+  .trip3 img {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4; 
+  }
+  
+  .trip4 h2 {
+    margin-bottom: -16px; 
+    grid-column: 1 / 8;
+    grid-row: 1 / 2; 
+  }
+  
+  .trip4 h3 {
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+  }
+  
+  .trip4 p {
+    grid-column: 1 / 8;
+    grid-row: 3 / 4; 
+  }
+  
+  .trip4 img {
+    grid-column: 8 / 13;
+    grid-row: 1 / 4; 
+  }
+  
+  #content {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family:  sans-serif; 
+  }
+  
+  #cright {
+    padding: 15px;
+  }
+  
+  #emailHeader {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-bottom: 0px;
+  }
+  
+  #addressHeader {
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+    margin-bottom: 0px;
+  }
+  
+  #emailName {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    font-size: 30px;
+  }
+  
+  #emailAddress {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    font-size: 30px;
+  }
+  
+  #emailPhone {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    font-size: 30px;
+  }
+  #emailTextArea {
+    grid-column: 1 / 4;
+    grid-row: 5 / 13;
+    font-size: 30px;
+    width: 370px;
+    height: 300px;
+  }
+  
+  
+  @media screen and (max-width: 550px) { 
+  /* beginning of media query */
+      nav ul, .banner-box {
+      display: block;
+     } 
+     .action h3 {
+       color: #028090;
+      }
+  
+    /* end of media query */ 
+  } 
+  

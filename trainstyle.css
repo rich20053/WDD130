@@ -1,0 +1,25 @@
+/* CSS files add styling rules to your content */
+
+@keyframes drive {
+    from {left: 0px;}
+    to {left: 90%;}
+  }
+  
+  #TrainBox {
+     position: relative;
+     width: 100%;
+     height: 200px;
+  }
+  
+  #train {
+    width: 10%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 4;
+    animation-name: drive;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+      <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        footer {
+          padding: 0px 15px 15px 15px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 2px;   
+        }
+        
+        img {
+          max-width: 100%;
+        }
+        
+        p {
+          font-family:  Arial, Helvetica, sans-serif;
+          padding: 15px;
+          margin: 0;
+        }
+
+        .buttons {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+        }
+        
+        .card {
+          width: 320px;
+          box-shadow: 1px 1px 4px 1px #888;
+          border-radius: 3px;
+          background-color: white;
+          overflow: hidden
+        }
+        
+        .editButton {
+          margin-left: 0px;
+          border-radius: 0 4px 4px 0;
+        }
+        
+        .viewButton {
+          margin-right: -5px;
+          border-radius: 4px 0 0 4px;
+        }
+        
+        #timetxt {
+          grid-column: 3 / 4;
+          grid-row: 1 / 2;
+          justify-self: right;
+        }
+        
+      </style>
+      <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var day = "am";
+          m = checkTime(m);
+          if (h > 12) {
+            day = "pm";
+            h -= 12;
+          } else if (h == 0) {
+            h = 12;
+          }
+          document.getElementById('timetxt').innerHTML =
+          h + ":" + m + " " + day;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+      </script>
+
+  </head>
+
+  <body  onload="startTime()">
+    <article class="card">
+      <img src="https://picsum.photos/320/240">  
+      <p>
+        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      </p>
+       <footer>
+         <div class="buttons">
+           <button type="button" style="padding:5px;" class="viewButton" onclick="">View</button> 
+           <button type="button" style="padding:5px;" class="editButton" onclick="">Edit</button> 
+         </div>
+         <div id="timetxt"></div>
+       </footer>
+    </article> 
+  </body>
+
+</html>
+  

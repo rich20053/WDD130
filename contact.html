@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+      <title>Whitewater Rafting Vacations - ContactUs</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./styles.css"> 
+    
+      <script src="https://smtpjs.com/v3/smtp.js"> </script> 
+    
+      <script>
+         /*
+         Input: Name, email, phone, message.
+         Process: send email to me.
+         Output: email sent message
+         */
+        function sendEmailToMe() {
+            let userName = document.getElementById("emailName").value;
+            let userEmail = document.getElementById("emailAddress").value;
+            let userPhone = document.getElementById("emailPhone").value;
+            let userText = document.getElementById("emailTextArea").value;
+/*
+            Email.send({ 
+              Host: "smtp.gmail.com", 
+              Username: "mail server login", 
+              Password: "mail server pw", 
+              To: 'contact email', 
+              From: userEmail, 
+              Subject: "From dry oar contact", 
+              Body: userName + " " + userPhone + "<br>"+userText, 
+            })
+            .then(function (message) { 
+              alert("Mail sent successfully!"); 
+            });          
+  */        
+          alert("Email sent to:\n" + "Name: " + userName + "\nEmail: " + userEmail + "\nPhone: " + userPhone + "\nMessage: " + userText);
+          
+        }
+        
+        
+      </script>
+      
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div class="logo-box"> <!-- logo will go here -->
+          <a href="index.html"> <img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Fdryoarlogo-green.png?v=1601488644326" alt="company-logo" >
+          </a>
+        </div>
+        <nav>
+          <!-- Navigation -->
+          <ul>
+            <li><a href="whitewater.html">Home</a></li>
+            <li><a href="ratedate.html">Rates / Dates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="banner-box">
+          <img src="https://byui-cit.github.io/wdd130/resources/images/salmon-kayak-banner1.jpg" alt="Man kayaking whitewater">
+        </div>
+        <div>
+          <section class="instructions"> 
+            <h1>
+                Contact Us      
+            </h1>
+            <p>Write and let us know how we can help.<br><br> Or give us a call and reserve your dates today!</p>
+          </section>
+          <section class="phone">
+            <img class="phoneImage" src="https://byui-cit.github.io/wdd130/resources/images/bighorn-ram.jpg" alt="later">
+            <h2 class="phoneHeader">Phone</h2>
+            <p class="phoneNumber">555-555-1234</p>
+          </section>
+          <section class="email">
+            <h2 id="emailHeader">Email</h2>
+            <h2 id="addressHeader">Address</h2>
+            <p class="address1">6282 East County Road<br><br>Nashville, In 47007</p>
+            <form class="emailForm">
+              <label for="emailName">Name:</label>
+              <input type="text" id="emailName"> 
+              <label for="emailAddress">Email:</label>
+              <input type="email" id="emailAddress">
+              <label for="emailPhone">Phone Number:</label>
+              <input type="tel" id="emailPhone">
+              <label for="emailTextArea">Message:</label>
+              <textarea id="emailTextArea"></textarea>
+              <button type="button" class="emailSubmit" onclick="sendEmailToMe()">Submit</button>            
+            </form>
+            <img class="emailImage" src="https://byui-cit.github.io/wdd130/resources/images/chuckwalla2.jpg" alt="later">
+           
+          </section>
+        </div>
+      </main>
+      <footer>
+        <!-- Footer goes here -->
+        <p id="cright">&copy; 2020 Dry Oar - Mark Richmond WDD 130-14 <a href="index.html">Home</a></p>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"> <img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Ffacebook.png?1601762160727" alt="Facebook icon"> 
+            </a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Fpinterest.png?1601762172949" alt="Pintrest icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank"><img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Ftwitter.png?1601762186250" alt="Twitter icon">
+            </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+</html>
+  

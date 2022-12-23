@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+      <title>Indiana on the Road Website | Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./istyle.css"> 
+    
+      <script>
+        function subscribeToIOTR() {
+          alert("Thank you for subscribing!!");
+        }
+      </script>
+      
+  </head>
+
+  <body>
+    <div id="content">
+
+      <header>
+        <div class="logo-box"> 
+          <a href="indiana.html"> 
+            <img  id="logo" src="https://cdn.glitch.com/319a83f9-943e-4afd-91ea-5eae48cbddd0%2Fthumbnails%2FAsset%208-100.jpg?1606527794509" alt="Indiana on the Road logo" >
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="indiana.html">Home</a></li>
+            <li><a href="northern-indiana.html">Northern Indiana</a></li>
+            <li><a href="southern-indiana.html">Southern Indiana</a></li>
+          </ul>
+        </nav>
+        <div class="banner-box">
+            <img src="https://cdn.glitch.com/319a83f9-943e-4afd-91ea-5eae48cbddd0%2Fthumbnails%2FIndianaFlag.jpg?1606930709500" alt="Indiana State Flag">
+            <div id="carLTR">          
+              <img id="car" src="https://cdn.glitch.com/319a83f9-943e-4afd-91ea-5eae48cbddd0%2Fthumbnails%2FAsset%203-100.jpg?1607306359387" alt="car" >
+            </div>
+        </div>
+      </header>
+
+      <main>
+        <h1>Come hit the road in Indiana!</h1>
+        <div class="home-grid">
+
+          <a href="northern-indiana.html" class="home-northern-headline"> 
+            <h2>
+              Northern Indiana
+            </h2>
+          </a>
+          <p class="home-northern-paragraph">
+           The majority of northern Indiana is farmland. It is beautiful country, and it is generally flatter, but higher elevation than southern Indiana.  
+           It is filled with gorgeous countryside and interesting sights.</p>
+          <a class="home-northern-img hover-img" style="text-decoration:none; margin:0; padding:0px;" href="northern-indiana.html">
+            <img src="https://cdn.glitch.com/319a83f9-943e-4afd-91ea-5eae48cbddd0%2Fthumbnails%2FIMG-2774.jpg?1604759443047" alt="Indiana Dunes National Park Shoreline" >
+          </a>
+
+          <a href="southern-indiana.html" class="home-southern-headline"> 
+            <h2>
+              Southern Indiana
+            </h2>
+          </a>
+          <p class="home-southern-paragraph">
+            Southern Indiana has some farmland, but the further south you go, the more rugged the country gets. 
+            It is also filled with wonderful sights.</p>
+          <a class="home-southern-img hover-img" href="southern-indiana.html">
+            <img src="https://cdn.glitch.com/319a83f9-943e-4afd-91ea-5eae48cbddd0%2Fthumbnails%2FIMG_3302.JPG?1604759353770" alt="Catarack Falls, Indiana" >
+          </a>
+          
+          <div class="home-subscription">
+            <p style="padding:0 20px">Do you want to receive emails about additional Indiana attractions?  <strong>Sign up here</strong>:   </p>
+            <form>
+              <fieldset>
+                <legend>Subscription</legend>
+                <p>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="user_name" size="30">
+                </p>
+                <p>
+                   <label for="mail">E-mail:</label>
+                   <input type="email" id="mail" name="user_email" size="30">
+                </p>
+                <p>
+                   <label for="phone">Phone:</label>
+                   <input type="text" id="phone" name="user_phone" size="30">
+                </p>
+                <fieldset>
+                  <legend>Areas of Interest</legend>
+                  <p>
+                     <input type="checkbox" name="interest" id="natural" value="natural">
+                     <label for="natural">Natural Sites</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" name="interest" id="historical" value="historical">
+                     <label for="historical">Historical Sites</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" name="interest" id="cultural" value="cultural">
+                     <label for="cultural">Cultural Sites</label>
+                  </p>
+                </fieldset>
+                <p>
+                   <label for="msg">Comments:</label>
+                   <textarea id="msg" name="user_message" rows="5"></textarea>
+                </p>
+                <button type="button" onclick="subscribeToIOTR()">Subscribe</button>
+              </fieldset>
+            </form>
+          </div>
+
+        </div>
+      </main>
+      
+      <footer>
+        <p id="cright">&copy; 2020 Indiana on the Road - Mark Richmond WDD 130-14 <a href="./index.html">Home</a></p>
+        <div class="social">
+            <a href="isite-plan.html">Site Plan</a>
+            <a href="https://www.facebook.com" target="_blank"> <img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Ffacebook.png?1601762160727" alt="Facebook icon"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Fpinterest.png?1601762172949" alt="Pintrest icon"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="https://cdn.glitch.com/b29d46de-51e6-47bc-8df3-9edef190ca2a%2Ftwitter.png?1601762186250" alt="Twitter icon"></a>
+        </div>
+      </footer>
+      
+    </div>
+  </body>
+</html>
